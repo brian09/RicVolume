@@ -1,0 +1,5 @@
+project(RicVolume)
+set (FILES adler32.c  compress.c  crc32.c  deflate.c  gzio.c  infback.c  inffast.c  inflate.c  inftrees.c  nifti1_io.c  trees.c  uncompr.c  znzlib.c  zutil.c nemardr.cpp  NiftiOrientConvert.cpp  RicUtil.cpp  RicVolume.cpp  RicVolumeSet.cpp)
+add_library (RicVolume STATIC ${FILES})
+set(FLAGS -std=c++11 -O2)
+target_compile_options (RicVolume PRIVATE ${FLAGS})
