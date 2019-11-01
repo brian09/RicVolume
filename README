@@ -1,0 +1,3 @@
+Please compile libRicVolume using the following commands:
+-- cmake CMakeLists.txt
+-- make all
